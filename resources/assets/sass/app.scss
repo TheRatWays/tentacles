@@ -53,6 +53,29 @@ header
 main
 {
     padding: 25px;
+
+    .sectionWrapper
+    {
+        .title
+        {
+            margin: 10px auto;
+        }
+
+        .videos
+        {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+
+            .video-item
+            {
+                .video-link
+                {
+
+                }
+            }
+        }
+    }
 }
 
 footer

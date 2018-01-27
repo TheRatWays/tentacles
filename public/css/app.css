@@ -8379,6 +8379,16 @@ main {
   padding: 25px;
 }
 
+main .sectionWrapper .title {
+  margin: 10px auto;
+}
+
+main .sectionWrapper .videos {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 footer .footer-widgets {
   padding: 30px;
   background-color: #181818;
