@@ -1,5 +1,7 @@
-@extends("layouts.base")
+@extends('layouts.base')
 
-@section("content")
+@section('title', 'Home - Project Tentacles')
+
+@section('content')
     <p>Testing content...</p>
 @endsection

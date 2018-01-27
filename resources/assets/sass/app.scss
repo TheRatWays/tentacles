@@ -1,9 +1,71 @@
-// Fonts
+//Fonts
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
 
-// Variables
+//Variables
 @import "variables";
 
-// Bootstrap
+//Bootstrap
 @import "~bootstrap-sass/assets/stylesheets/bootstrap";
 
+*
+{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:    border-box;
+    box-sizing:         border-box;
+}
+
+body
+{
+    background-color: $bodyColor;
+    color: $textColor;
+}
+
+header
+{
+    #mainNav
+    {
+        margin: 0;
+        background-color: $navbarBG !important;
+        border: none;
+
+        .navbar-header
+        {
+            .navbar-brand
+            {
+                padding: 20px;
+            }
+        }
+
+        .navbar-nav
+        {
+            .nav-item
+            {
+                .nav-link
+                {
+                    margin: 0;
+                    padding: 20px;
+                }
+            }
+        }
+    }
+}
+
+main
+{
+    padding: 25px;
+}
+
+footer
+{
+    .footer-widgets
+    {
+        padding: 30px;
+        background-color: $footerWidgetsBG;
+    }
+
+    .site-info
+    {
+        padding: 15px;
+        background-color: $footerSiteInfoBG;
+    }
+}

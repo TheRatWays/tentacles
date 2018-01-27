@@ -1,22 +1,28 @@
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
 <head>
-    @include("includes.head")
+    @include('includes.head')
 </head>
 
 <body>
-    <div class="container">
-        <header class="row">
-            @include('includes.header')
-        </header>
+    <!-- Header -->
+    <header>
+        @include('includes.header')
+    </header>
 
-        <main id="main" class="row">
+    <!-- Main Content -->
+    <main>
+        <div class="container">
             @yield('content')
-        </main>
+        </div>
+    </main>
 
-        <footer class="row">
-            @include('includes.footer')
-        </footer>
-    </div>
+    <!-- Footer -->
+    <footer>
+        @include('includes.footer')
+    </footer>
+
+    <!-- Scripts -->
+    <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>
