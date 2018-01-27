@@ -11,7 +11,5 @@
 |
 */
 
-Route::get( '/', function()
-{
-    return view( 'pages.index' );
-} );
+Route::get('/', 'PagesController@index');
+Route::get('/categories', 'PagesController@categories');

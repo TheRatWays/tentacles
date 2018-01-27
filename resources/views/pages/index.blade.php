@@ -1,6 +1,6 @@
 @extends('layouts.base')
 
-@section('title', 'Home - Project Tentacles')
+@section('title', 'Home -')
 
 @section('content')
     <div class="sectionWrapper">
