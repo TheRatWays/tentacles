@@ -13,3 +13,5 @@
 
 Route::get('/', 'PagesController@index');
 Route::get('/categories', 'PagesController@categories');
+
+Route::resource('videos', 'VideosController');

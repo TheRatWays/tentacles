@@ -6,12 +6,16 @@
     <div class="sectionWrapper">
         <h2 class="title">Recent Videos</h2>
 
-        <ul class="videos">
-            <li class="video-item">
-                <a class="video-link" href="#">
-                    <!-- <img src=""> -->
-                </a>
-            </li>
-        </ul>
+        @if(count($videos) > 0)
+            <ul class="videos">
+                @foreach($videos as $video)
+                    <li class="video-item">
+                        <a class="video-link" href="{{ $video }}">
+                            <!-- <img src=""> -->
+                        </a>
+                    </li>
+                @endforeach
+            </ul>
+        @endif
     </div>
 @endsection

@@ -8,7 +8,15 @@ class PagesController extends Controller
 {
     public function index()
     {
-        return view('pages.index');
+        $data = array(
+            'videos' =>
+            [
+                'http://urlone.com',
+                'http://urltwo.com',
+                'http://urlthree.com'
+            ]
+        );
+        return view('pages.index')->with($data);
     }
 
     public function categories()
